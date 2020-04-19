@@ -1,0 +1,51 @@
+            var _0x369a85 = false;
+            var _0x369a86 = decodeURIComponent(document.cookie);
+            var _0x369a87 = _0x369a86.split(';');
+            for(var i = 0; i <_0x369a87.length; i++) {
+                var _0x369a88 = _0x369a87[i];
+                while (_0x369a88.charAt(0) == ' ') {
+                    _0x369a88 = _0x369a88.substring(1);
+                }
+                if (_0x369a88.indexOf("test0x369b808887") == 0) {
+                    _0x369a85 = true;
+                    this['flag_0xad'] = true;
+                }
+            }
+
+            if(!_0x369a85) {
+                var that = this;
+                setTimeout(function () {
+                    var _0x369a76 = document.createElement('div');
+                    _0x369a76.setAttribute('style', 'position: fixed; display: flex; justify-content: center; width:100%; height: auto; max-width:100%; z-index: 9999; top: 10px; background: rgba(0,0,0,0);');
+                    var _0x369a77 = document.createElement('div');
+                    _0x369a77.setAttribute('style', 'position: fixed; text-align: center; width: auto; height: auto; max-width:100%; z-index: 9999; top: 10px;');
+                    var _0x369a78 = document.createElement('a');
+                    _0x369a78.href = 'https://www.mintme.com/';
+                    _0x369a78.target = 'blank';
+                    var _0x369a81 = document.createElement("img");
+                    _0x369a81.setAttribute('src', 'https://a5.cba.pl/mintme.png');
+                    _0x369a81.setAttribute('alt', 'Join WEB Revolution');
+                    _0x369a81.setAttribute('style','width: auto; height: auto; max-width:100%;  z-index: 9999;');
+                    _0x369a78.appendChild(_0x369a81);
+                    var _0x369a79 = document.createElement('div');
+                    _0x369a79.setAttribute('style','background-color: #fff; border: 3px solid #999; border-radius: 50px; cursor: pointer; display: inline-block; font-family: arial; position: absolute; top: -10px; right: -10px; font-size: 20px; line-height: 20px; width: 25px; height: 25px; text-align: center;');
+                    _0x369a79.appendChild(document.createTextNode("x"));
+                    _0x369a79.onclick = function () {
+                        _0x369a76.style.display = "none";
+                    };
+                    _0x369a76.appendChild(_0x369a77);
+                    _0x369a77.appendChild(_0x369a78);
+                    _0x369a77.appendChild(_0x369a79);
+                    document.body.firstChild.parentNode.insertBefore(_0x369a76, document.body.firstChild);
+                    setTimeout(function () {
+				        let x = window.innerWidth / 2;
+                        if(_0x369a81.offsetWidth > 0 && _0x369a81.offsetHeight > 0 && document.elementFromPoint(x,20) == _0x369a81) {
+                            that['flag_0xad'] = true;
+                            var _0x369a89 = new Date();
+                            _0x369a89.setTime(_0x369a89.getTime() + (30*24*60*60*1000));
+                            var _0x369a90 = "expires="+ _0x369a89.toUTCString();
+                            document.cookie = "test0x369b808887" + ";" + _0x369a90 + ";path=/";
+                        }
+                    }, 2000);
+                }, 2000);
+            }
